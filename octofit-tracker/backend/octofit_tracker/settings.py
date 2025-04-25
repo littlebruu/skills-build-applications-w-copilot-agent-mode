@@ -89,6 +89,7 @@ DATABASES = {
             # "authSource": "admin",
             # "authMechanism": "SCRAM-SHA-1",
         },
+
     }
 }
 
