@@ -7,13 +7,13 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = "https://stunning-adventure-7vwpx5x567g53g9-8000.app.github.dev"
+    base_url = "https://stunning-adventure-7vwpx5x567g53g9-8000.app.github.dev/api"
     return Response({
-        'users': f'{base_url}/api/users/',
-        'teams': f'{base_url}/api/teams/',
-        'activities': f'{base_url}/api/activities/',
-        'leaderboard': f'{base_url}/api/leaderboard/',
-        'workouts': f'{base_url}/api/workouts/'
+        'users': f'{base_url}/users/',
+        'teams': f'{base_url}/teams/',
+        'activities': f'{base_url}/activities/',
+        'leaderboard': f'{base_url}/leaderboard/',
+        'workouts': f'{base_url}/workouts/'
     })
 
 class UserViewSet(viewsets.ModelViewSet):
