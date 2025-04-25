@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'djongo',
     'corsheaders',
     'octofit_tracker',
+    "core",
 ]
 
 MIDDLEWARE = [
