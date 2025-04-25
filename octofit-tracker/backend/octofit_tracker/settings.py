@@ -32,8 +32,11 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
-
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "stunning-adventure-7vwpx5x567g53g9-8000.app.github.dev"
+]
 CODESPACE_URL = os.getenv('CODESPACE_URL', 'http://localhost:8000')
 API_SUFFIX = '/api'
 
