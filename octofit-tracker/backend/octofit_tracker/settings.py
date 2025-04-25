@@ -34,7 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 
-CODESPACE_URL = os.getenv('CODESPACE_URL', 'http://localhost:8000')
+CODESPACE_URL = os.getenv('stunning-adventure-7vwpx5x567g53g9', 'http://localhost:8000')
 
 
 # Application definition
